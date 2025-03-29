@@ -13,7 +13,7 @@ spark = SparkSession.builder.appName("TelcoChurn").getOrCreate()
 
 # Phase 1: Data Acquisition and Understanding
 # Load the data
-df = spark.read.csv("file:///C:/Users/Ankita/OneDrive/Desktop/Telco Project/telco_churn.csv", header=True, inferSchema=True)
+df = spark.read.csv("telco_churn.csv", header=True, inferSchema=True)
 df.printSchema()
 df.show(5)
 
